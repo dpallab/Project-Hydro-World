@@ -1,6 +1,6 @@
 # 🌊 Hydro World - E-Commerce Platform  
 
-Hydro World is a modern **E-Commerce web application** built with **Node.js, Express, Firebase, MongoDB, and Stripe**.  
+Hydro World is a modern **E-Commerce web application** built with **Node.js, Express, Firebase, and Stripe**.  
 It provides a seamless shopping experience with real-time cart management, secure authentication, and payment integration.  
 
 ---
