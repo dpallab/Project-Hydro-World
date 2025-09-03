@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Handicraft Store - Cart Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="../css/form.css" />
+    <link rel="stylesheet" href="../css/add-product.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/cart.css" />
+    <link rel="stylesheet" href="../css/checkout.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="nav-panel bg"></nav>
+    <div class="error">
+      <p>Erorrrrrrrrrrrrrrrrrr</p>
+    </div>
+    <div class="payment-success">
+      <img
+        src="https://img.icons8.com/color/96/000000/checked.png"
+        alt="Success"
+      />
+      <h1>Payment Successful!</h1>
+      <p>
+        Thank you for your purchase. Your transaction has been completed
+        successfully.
+      </p>
+      <a href="/">Go to Home</a>
+    </div>
+    <div class="form">
+      <h1 class="heading">Checkout</h1>
+      <p class="text">delivery address</p>
+      <input type="text" id="address" placeholder="Enter your address" />
+      <input type="text" id="street" placeholder="Enter your street" />
+      <div class="city-state">
+        <input type="text" id="city" placeholder="Enter your city" />
+        <input type="text" id="state" placeholder="Enter your state" />
+        <input type="text" id="pincode" placeholder="Enter your pincode" />
+      </div>
+      <input type="text" id="landmark" placeholder="Enter your landmark" />
+      <p class="error">Error</p>
+    </div>
+
+    <!-- Cart Section -->
+    <div class="cart-section">
+      <div class="product-list">
+        <p class="section-heading">your cart</p>
+        <div class="cart-container"></div>
+      </div>
+      <!-- CHECKOUT SECTION -->
+      <div class="checkout-section">
+        <div class="checkout-box">
+          <p class="text">your total bill</p>
+          <h1 class="bill">$00</h1>
+          <a class="place-order-btn">Place Order</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/nav.js"></script>
+    <!-- <script src="../js/product.js"></script> -->
+    <script src="../js/common.js"></script>
+    <script src="../js/cart.js"></script>
+    <script src="../js/checkout.js"></script>
+  </body>
+</html>

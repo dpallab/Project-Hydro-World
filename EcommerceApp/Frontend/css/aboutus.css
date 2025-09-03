@@ -1,0 +1,142 @@
+:root {
+  --brand: #b45309; /* Warm earthy orange */
+  --brand-600: #92400e;
+  --bg: #fdfaf6;
+  --text: #3f3f3f;
+  --muted: #6b7280;
+  --surface: #ffffff;
+  --surface-2: #fafaf9;
+  --radius: 16px;
+  --shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  color: var(--text);
+  background: var(--surface-2);
+  line-height: 1.6;
+}
+a {
+  color: var(--brand);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  width: min(1100px, 92vw);
+  margin: auto;
+}
+
+header {
+  background: #fff8f2;
+  border-bottom: 1px solid #e5e7eb;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 0;
+}
+.logo {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--brand-600);
+}
+
+.hero {
+  padding: 72px 0 48px;
+  text-align: center;
+  background: linear-gradient(180deg, #fff8f2, #ffffff);
+}
+h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin: 16px 0 12px;
+}
+.lead {
+  font-size: 1.1rem;
+  color: var(--muted);
+  max-width: 60ch;
+  margin: auto;
+}
+
+section {
+  padding: 56px 0;
+}
+.section-header h2 {
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+}
+.section-header p {
+  color: var(--muted);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 18px;
+}
+.card {
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 20px;
+  box-shadow: var(--shadow);
+}
+.card h3 {
+  margin: 12px 0 6px;
+}
+.card p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.team {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+}
+.member {
+  background: var(--surface);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+.member .bio {
+  padding: 14px 16px;
+}
+
+.cta {
+  background: var(--brand);
+  color: white;
+  border-radius: var(--radius);
+  padding: 24px;
+  text-align: center;
+}
+.cta h3 {
+  margin: 0 0 6px;
+}
+.cta .button {
+  display: inline-block;
+  background: #fff;
+  color: var(--brand-600);
+  padding: 12px 20px;
+  border-radius: 12px;
+  font-weight: 600;
+  margin-top: 12px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: var(--muted);
+  border-top: 1px solid #e5e7eb;
+}
